@@ -15,7 +15,7 @@ router.get('/checkkey', async (req, res) => {
         status: 403,
         message: `apikey ${apikey} not found, please register first!`
     });
-    res.send({status: 200, apikey: apikey, response: 'Active'});
+    res.send({Author: 'SF Corp', status: 200, apikey: apikey, response: 'Active'});
 });
 
 router.get('/ytplay', youtubePlay);
