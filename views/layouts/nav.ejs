@@ -9,15 +9,13 @@
           <li><a href="/changelog">Changelog</a></li>
           <% if (user) { %>
             <li><a href="/users/logout">Logout</a></li>
+            <li><a href="/docs">Dashboard</a></li>
           <% } else { %>
             <li><a href="/users/register">Register</a></li>
             <li><a href="/users/login">Login</a></li>
+            <li><a href="/docs">See Docs</a></li>
           <% } %> 
       </ul>
-      <% if (user) { %>
-        <a href="/docs" class="button button-primary cta">Dashboard</a>
-      <% } else { %>
-        <a href="/docs" class="button button-primary cta">See Docs</a>
   </nav>
   <a class="header-menu-toggle" href="#"><span>Menu</span></a>    	
 </header>
