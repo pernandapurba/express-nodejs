@@ -90,6 +90,12 @@ app.get('/premium', (req, res) => {
   })
 })
 
+app.get('/changelog', (req, res) => {
+  res.render('changelog', {
+    layout: 'layouts/main'
+  })
+})
+
 app.use('/api', apiRouters);
 app.use('/users', userRouters);
 
